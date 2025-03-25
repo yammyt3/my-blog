@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 import os
 
-POSTS_DIR = "../posts"
-OUTPUT_FILE = "../index.html"
+POSTS_DIR = "posts"  # ← 変更：相対パスをルートからに
+OUTPUT_FILE = "index.html"
 
 def get_post_info(filepath):
     with open(filepath, encoding="utf-8") as f:
@@ -35,3 +35,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+ 
